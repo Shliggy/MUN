@@ -1,29 +1,31 @@
 /* Default style for all buttons */
 .nav-link {
-    font-weight: normal;
-    color: black;
-  }
+  color: black;
+}
 
-  /* Style for the active button */
-  .nav-link.active {
-    font-weight: bold;
-    color:black
-  }
+/* Style for the active button */
+.nav-link.active {
+  filter: brightness(100%);
+  text-decoration: underline;
+  color: black;
+}
 
-  /* Remove default hover effect and customize */
-  .nav-link:hover {
-    background-color: inherit; /* Keeps the original color */
-    filter: brightness(90%); /* Slight darkening for hover feedback */
-    color: black /*no font color change when hoverin*/
-  }
+/* Remove default hover effect and customize */
+.nav-link:hover {
+  background-color: inherit; /* Keeps the original color */
+  filter: brightness(90%); /* Slight darkening for hover feedback */
+  color: black; /* Ensures no font color change on hover */
+}
 
-  /* Active button */
-  .nav-link.active:hover {
-    filter: brightness(100%); /* No hover effect on active buttons */
-  }
+/* Active button */
+.nav-link.active:hover {
+  filter: brightness(100%); /* No hover effect on active buttons */
+  color: black; /* Ensures the font color remains black */
+}
 
-  /* Remove blue focus state */
-  .nav-link:focus {
-    outline: none;
-    background-color: inherit;
-  }
+/* Remove blue focus state */
+.nav-link:focus {
+  outline: none;
+  background-color: inherit;
+  color: inherit;
+}
