@@ -108,12 +108,12 @@
       <div class="col-10">
         <nav>
           <div class="nav nav-tabs justify-content-end" id="nav-tab" role="tablist"> <button
-              class="nav-link active me-2" style="background-color: yellow;" id="nav-Chair-Notes-tab"
+              class="nav-link active me-2 border-0" style="background-color: yellow;" id="nav-Chair-Notes-tab"
               data-bs-toggle="tab" data-bs-target="#nav-Chair-Notes" type="button" role="tab"
-              aria-controls="nav-Chair-Notes" aria-selected="true">Chair Notes</button> <button class="nav-link me-2"
+              aria-controls="nav-Chair-Notes" aria-selected="true">Chair Notes</button> <button class="nav-link me-2 border-0"
               style="background-color: aqua;" id="nav-Messages-tab" data-bs-toggle="tab" data-bs-target="#nav-Messages"
               type="button" role="tab" aria-controls="nav-Messages" aria-selected="false">Messages</button> <button
-              class="nav-link" style="background-color: lime;" id="nav-Directives-tab" data-bs-toggle="tab"
+              class="nav-link border-0" style="background-color: lime;" id="nav-Directives-tab" data-bs-toggle="tab"
               data-bs-target="#nav-Directives" type="button" role="tab" aria-controls="nav-Directives"
               aria-selected="false">Directives</button> </div>
         </nav>
@@ -129,15 +129,16 @@
         </ul>
       </div>
     </div> <!-- Combined tab content -->
-    <div class="row">
-      <div class="col-10">
+    <div class="row border-0">
+      <div class="col-10" style="flex-grow: 1">
         <div class="tab-content" id="nav-tabContent">
           <div class="tab-pane fade show active" id="nav-Chair-Notes" role="tabpanel"
-            aria-labelledby="nav-Chair-Notes-tab" tabindex="0"> Lorem Ipsum Chair Notes </div>
-          <div class="tab-pane fade" id="nav-Messages" role="tabpanel" aria-labelledby="nav-Messages-tab" tabindex="0">
-            Lorem Ipsum Messages </div>
+            aria-labelledby="nav-Chair-Notes-tab" tabindex="0" style="background-color: yellow;"> Lorem Ipsum Chair
+            Notes </div>
+          <div class="tab-pane fade" id="nav-Messages" role="tabpanel" aria-labelledby="nav-Messages-tab" tabindex="0"
+            style="background-color: aqua;"> Lorem Ipsum Messages </div>
           <div class="tab-pane fade" id="nav-Directives" role="tabpanel" aria-labelledby="nav-Directives-tab"
-            tabindex="0"> Lorem Ipsum Directives </div>
+            tabindex="0" style="background-color: lime;"> Lorem Ipsum Directives </div>
         </div>
       </div>
       <div class="col-2">
@@ -167,7 +168,7 @@
                   data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                   aria-controls="panelsStayOpen-collapseOne">
                   Accordion Item #1
-                </button>
+                </button>F
               </h2>
               <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
                 <div class="accordion-body">
