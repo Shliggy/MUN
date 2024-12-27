@@ -74,6 +74,52 @@
       </div>
     </nav>
 
+<nav>
+  
+  <div class="nav nav-tabs justify-content-end" id="nav-tab" role="tablist">
+    <button class="nav-link active" style="background-color: yellow;" id="nav-Chair's Notes-tab" data-bs-toggle="tab" data-bs-target="#nav-Chair's Notes" type="button" role="tab" aria-controls="nav-Chair's Notes" aria-selected="true">Chair's Notes</button>
+    <button class="nav-link" style="background-color: aqua;" id="nav-Messages-tab" data-bs-toggle="tab" data-bs-target="#nav-Messages" type="button" role="tab" aria-controls="nav-Messages" aria-selected="false">Messages</button>
+    <button class="nav-link" style="background-color: lime; id="nav-Directives-tab" data-bs-toggle="tab" data-bs-target="#nav-Directives" type="button" role="tab" aria-controls="nav-Directives" aria-selected="false">Directives</button>
+  </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="nav-Chair's Notes" role="tabpanel" aria-labelledby="nav-Chair's Notes-tab" tabindex="0";">...</div>
+  <div class="tab-pane fade show active" id="nav-Messages" role="tabpanel" aria-labelledby="nav-Messages-tab" tabindex="0"; >...</div>
+  <div class="tab-pane fade" id="nav-Directives" role="tabpanel" aria-labelledby="nav-Directives-tab" tabindex="0"; >...</div>
+</div>
+<style>
+  /* Default style for all buttons */
+  .nav-link {
+    font-weight: normal;
+    color: black;
+  }
+
+  /* Style for the active button */
+  .nav-link.active {
+    font-weight: bold;
+    color:black
+  }
+
+  /* Remove default hover effect and customize */
+  .nav-link:hover {
+    background-color: inherit; /* Keeps the original color */
+    filter: brightness(90%); /* Slight darkening for hover feedback */
+    color: black /*no font color change when hoverin*/
+  }
+
+  /* Active button */
+  .nav-link.active:hover {
+    filter: brightness(100%); /* No hover effect on active buttons */
+  }
+
+  /* Remove blue focus state */
+  .nav-link:focus {
+    outline: none;
+    background-color: inherit;
+  }
+  
+</style>
+
     <div class="modal fade" id="help" tabindex="-1" aria-labelledby="help" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -124,6 +170,7 @@
         </div>
       </div>
     </div>
+    
     
     
 </body>
