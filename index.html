@@ -1,184 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 
-    <title>Crisis Capybara</title>
+  <title>Crisis Capybara</title>
 </head>
+
 <body>
-    <nav class="navbar bg-dark"> 
-      <div class="col text-start"> 
-        <a class="navbar-brand text-white fs-2" href="#"> 
-          <img src="/assets/icons/logo.png" alt="Logo" width="60" height="48" class="d-inline-block align-text-tgit  ms-2 me-2"> 
-          Crisis Capybara </a> 
-        </div> <div class="col text-center"> 
-          <span class="fs-1 text-white">
-            Example Crisis</span> 
-          </div> 
-          <div class="col text-end"> 
-            <div class="d-flex justify-content-end"> 
-              <div> 
-                <a target="_blank" href="/assets/resources/crisis.pdf"> 
-                  <button type="button" class="btn btn-outline-light"> 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16"> 
-                      <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/> 
-                    </svg> 
-                  </button>
-                 </a> 
-                 <button type="button" class="btn btn-outline-light modal-xl modal-dialog-scrollable" data-bs-toggle="modal" data-bs-target="#help"> 
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16"> 
-                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/> 
-                    <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/> 
-                  </svg> 
-                </button> 
-                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#settings">
-                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-wide-connected" viewBox="0 0 16 16"> 
-                    <path d="M7.068.727c.243-.97 1.62-.97 1.864 0l.071.286a.96.96 0 0 0 1.622.434l.205-.211c.695-.719 1.888-.03 1.613.931l-.08.284a.96.96 0 0 0 1.187 1.187l.283-.081c.96-.275 1.65.918.931 1.613l-.211.205a.96.96 0 0 0 .434 1.622l.286.071c.97.243.97 1.62 0 1.864l-.286.071a.96.96 0 0 0-.434 1.622l.211.205c.719.695.03 1.888-.931 1.613l-.284-.08a.96.96 0 0 0-1.187 1.187l.081.283c.275.96-.918 1.65-1.613.931l-.205-.211a.96.96 0 0 0-1.622.434l-.071.286c-.243.97-1.62.97-1.864 0l-.071-.286a.96.96 0 0 0-1.622-.434l-.205.211c-.695.719-1.888.03-1.613-.931l.08-.284a.96.96 0 0 0-1.186-1.187l-.284.081c-.96.275-1.65-.918-.931-1.613l.211-.205a.96.96 0 0 0-.434-1.622l-.286-.071c-.97-.243-.97-1.62 0-1.864l.286-.071a.96.96 0 0 0 .434-1.622l-.211-.205c-.719-.695-.03-1.888.931-1.613l.284.08a.96.96 0 0 0 1.187-1.186l-.081-.284c-.275-.96.918-1.65 1.613-.931l.205.211a.96.96 0 0 0 1.622-.434zM12.973 8.5H8.25l-2.834 3.779A4.998 4.998 0 0 0 12.973 8.5m0-1a4.998 4.998 0 0 0-7.557-3.779l2.834 3.78zM5.048 3.967l-.087.065zm-.431.355A4.98 4.98 0 0 0 3.002 8c0 1.455.622 2.765 1.615 3.678L7.375 8zm.344 7.646.087.065z"/> 
-                  </svg> 
-                </button> 
-              </div> 
-              <div class="ms-4 me-2"> 
-                <form role="search"> 
-                  <button class="btn btn-outline-danger" type="submit"> 
-                    Log out </button> 
-                  </form> 
-                </div> 
-              </div> 
-            </div> 
-          </nav>
-    <nav class="navbar bg-light">
-      <div class="d-flex justify-content-start">
-        <img src="/assets/icons/logo.png" alt="Generic placeholder image" class="me-2 img-fluid" style="width: 35px; border-radius: 10px;">
-        <span class="fs-4 me-2">John Cena</span>
-        <a target="_blank" href="/assets/resources/bio.pdf">
-          <button type="button" class="btn btn-outline-gray">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
-            <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+  <nav class="navbar bg-dark">
+    <div class="col text-start">
+      <a class="navbar-brand text-white fs-2" href="#">
+        <img src="/assets/icons/logo.png" alt="Logo" width="60" height="48"
+          class="d-inline-block align-text-top ms-2 me-2">
+        Crisis Capybara </a>
+    </div>
+    <div class="col text-center">
+      <span class="fs-1 text-white">
+        Example Crisis</span>
+    </div>
+    <div class="col text-end">
+      <div class="d-flex justify-content-end">
+        <div>
+          <a target="_blank" href="/assets/resources/crisis.pdf">
+            <button type="button" class="btn btn-outline-light">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book"
+                viewBox="0 0 16 16">
+                <path
+                  d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
+              </svg>
+            </button>
+          </a>
+          <button type="button" class="btn btn-outline-light modal-xl modal-dialog-scrollable" data-bs-toggle="modal"
+            data-bs-target="#help">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-question-circle" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+              <path
+                d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94" />
+            </svg>
+          </button>
+          <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#settings">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-gear-wide-connected" viewBox="0 0 16 16">
+              <path
+                d="M7.068.727c.243-.97 1.62-.97 1.864 0l.071.286a.96.96 0 0 0 1.622.434l.205-.211c.695-.719 1.888-.03 1.613.931l-.08.284a.96.96 0 0 0 1.187 1.187l.283-.081c.96-.275 1.65.918.931 1.613l-.211.205a.96.96 0 0 0 .434 1.622l.286.071c.97.243.97 1.62 0 1.864l-.286.071a.96.96 0 0 0-.434 1.622l.211.205c.719.695.03 1.888-.931 1.613l-.284-.08a.96.96 0 0 0-1.187 1.187l.081.283c.275.96-.918 1.65-1.613.931l-.205-.211a.96.96 0 0 0-1.622.434l-.071.286c-.243.97-1.62.97-1.864 0l-.071-.286a.96.96 0 0 0-1.622-.434l-.205.211c-.695.719-1.888.03-1.613-.931l.08-.284a.96.96 0 0 0-1.186-1.187l-.284.081c-.96.275-1.65-.918-.931-1.613l.211-.205a.96.96 0 0 0-.434-1.622l-.286-.071c-.97-.243-.97-1.62 0-1.864l.286-.071a.96.96 0 0 0 .434-1.622l-.211-.205c-.719-.695-.03-1.888.931-1.613l.284.08a.96.96 0 0 0 1.187-1.186l-.081-.284c-.275-.96.918-1.65 1.613-.931l.205.211a.96.96 0 0 0 1.622-.434zM12.973 8.5H8.25l-2.834 3.779A4.998 4.998 0 0 0 12.973 8.5m0-1a4.998 4.998 0 0 0-7.557-3.779l2.834 3.78zM5.048 3.967l-.087.065zm-.431.355A4.98 4.98 0 0 0 3.002 8c0 1.455.622 2.765 1.615 3.678L7.375 8zm.344 7.646.087.065z" />
+            </svg>
+          </button>
+        </div>
+        <div class="ms-4 me-2">
+          <form role="search">
+            <button class="btn btn-outline-danger" type="submit">
+              Log out </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <nav class="navbar bg-light">
+    <div class="d-flex justify-content-start">
+      <img src="/assets/icons/logo.png" alt="Generic placeholder image" class="me-2 img-fluid"
+        style="width: 35px; border-radius: 10px;">
+      <span class="fs-4 me-2">John Cena</span>
+      <a target="_blank" href="/assets/resources/bio.pdf">
+        <button type="button" class="btn btn-outline-gray">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book"
+            viewBox="0 0 16 16">
+            <path
+              d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
           </svg>
         </button>
+      </a>
+    </div>
+    <div class="d-flex flex-column">
+      <div class="text-center">
+        <a class="navbar-brand text-dark fs-2" href="#">
+          <span class="fs-3 modal-xl modal-dialog-scrollable cursor-pointer" data-bs-toggle="modal"
+            data-bs-target="#cabinet">
+            Example Cabinet </span>
         </a>
       </div>
-      <div class="d-flex flex-column">
-        <div class="text-center">
-        <span class="fs-3 modal-xl modal-dialog-scrollable cursor-pointer" data-bs-toggle="modal" data-bs-target="#cabinet">
-        Example Cabinet </span>
-        </div>
-        <div class="text-center">
-          <span>Chair</span>
-        </div>
+      <div class="text-center">
+        <span>Chair</span>
       </div>
-      <div class="d-flex justify-content-end fs-4">
-        <span class="fs-4">July 4th 12 a.m.</span>
-        <img src="/assets/icons/clock.svg" alt="Generic placeholder image" class="img-fluid ms-2 me-2" style="width: 35px; border-radius: 10px;">
-      </div>
-    </nav>
+    </div>
+    <div class="d-flex justify-content-end fs-4">
+      <span class="fs-4">July 4th 12 a.m.</span>
+      <img src="/assets/icons/clock.svg" alt="Generic placeholder image" class="img-fluid ms-2 me-2"
+        style="width: 35px; border-radius: 10px;">
+    </div>
+  </nav>
 
-<nav>
-  
-  <div class="nav nav-tabs justify-content-end" id="nav-tab" role="tablist">
-    <button class="nav-link active" style="background-color: yellow;" id="nav-Chair Notes-tab" data-bs-toggle="tab" data-bs-target="#nav-Chair Notes" type="button" role="tab" aria-controls="nav-Chair Notes" aria-selected="true">Chair Notes</button>
-    <button class="nav-link" style="background-color: aqua;" id="nav-Messages-tab" data-bs-toggle="tab" data-bs-target="#nav-Messages" type="button" role="tab" aria-controls="nav-Messages" aria-selected="false">Messages</button>
-    <button class="nav-link" style="background-color: lime; id="nav-Directives-tab" data-bs-toggle="tab" data-bs-target="#nav-Directives" type="button" role="tab" aria-controls="nav-Directives" aria-selected="false">Directives</button>
+  <div class="container-fluid mt-2">
+    <div class="row">
+    <div class="col-10">
+      <nav>
+        <div class="nav nav-tabs justify-content-end" id="nav-tab" role="tablist">
+          <button class="nav-link active" style="background-color: yellow;" id="nav-Chair Notes-tab"
+            data-bs-toggle="tab" data-bs-target="#nav-Chair Notes" type="button" role="tab"
+            aria-controls="nav-Chair Notes" aria-selected="true">Chair Notes</button>
+          <button class="nav-link" style="background-color: aqua;" id="nav-Messages-tab" data-bs-toggle="tab"
+            data-bs-target="#nav-Messages" type="button" role="tab" aria-controls="nav-Messages"
+            aria-selected="false">Messages</button>
+          <button class="nav-link" style="background-color: lime;" id="nav-Directives-tab" data-bs-toggle="tab"
+            data-bs-target="#nav-Directives" type="button" role="tab" aria-controls="nav-Directives"
+            aria-selected="false">Directives</button>
+        </div>
+      </nav>
+    </div>
+    <div class="col-2">
+      <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+            type="button" role="tab" aria-controls="pills-home" aria-selected="true">News</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-notifications-tab" data-bs-toggle="pill" data-bs-target="#pills-notifications"
+            type="button" role="tab" aria-controls="pills-notifications" aria-selected="false">Notifis</button>
+        </li>
+      </ul>
+    </div>
   </div>
-</nav>
-<div class="tab-content" id="nav-tabContent">
-  <div class="tab-pane fade" id="nav-Chair Notes" role="tabpanel" aria-labelledby="nav-Chair Notes-tab" tabindex="0"; >Chair Notes Lorem Ipsum</div>
-  <div class="tab-pane fade" id="nav-Messages" role="tabpanel" aria-labelledby="nav-Messages-tab" tabindex="0"; >Messages Lorem Ipsum</div>
-  <div class="tab-pane fade" id="nav-Directives" role="tabpanel" aria-labelledby="nav-Directives-tab" tabindex="0"; >Directives Lorem Ipsum</div>
-</div>
-    <div class="modal fade" id="help" tabindex="-1" aria-labelledby="help" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="help">Help</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="accordion" id="accordionPanelsStayOpenExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                    Accordion Item #1
-                  </button>
-                </h2>
-                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                  <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                  </div>
+   <div class="col-10">
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-Chair's Notes" role="tabpanel"
+        aria-labelledby="nav-Chair's Notes-tab" tabindex="0" ;">...</div>
+      <div class="tab-pane fade show active" id="nav-Messages" role="tabpanel" aria-labelledby="nav-Messages-tab"
+        tabindex="0" ;>...</div>
+      <div class="tab-pane fade" id="nav-Directives" role="tabpanel" aria-labelledby="nav-Directives-tab" tabindex="0" ;>
+        ...</div>
+    </div>
+   </div>
+   <div class="col-2">
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+        tabindex="0">...</div>
+      <div class="tab-pane fade" id="pills-notifications" role="tabpanel" aria-labelledby="pills-notifications-tab" tabindex="0">...
+      </div>
+    </div>
+   </div>
+  </div>
+
+  <!-- Hidden: help menu modal -->
+  <div class="modal fade" id="help" tabindex="-1" aria-labelledby="help" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="help">Help</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapseOne">
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                  plugin adds the appropriate classes that we use to style each element. These classes control the
+                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                 </div>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                    Accordion Item #2
-                  </button>
-                </h2>
-                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                  <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                  </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+                  plugin adds the appropriate classes that we use to style each element. These classes control the
+                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                 </div>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                    Accordion Item #3
-                  </button>
-                </h2>
-                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                  <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                  </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                  plugin adds the appropriate classes that we use to style each element. These classes control the
+                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                 </div>
               </div>
             </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
+  </div>
+  </div>
 
-    <div class="modal fade" id="settings" tabindex="-1" aria-labelledby="settings" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="settings">Settings</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
+  <!-- Hidden: settings menu modal -->
+  <div class="modal fade" id="settings" tabindex="-1" aria-labelledby="settings" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="settings">Settings</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+          clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+          consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+          takimata sanctus est Lorem ipsum dolor sit amet.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="modal fade" id="cabinet" tabindex="-1" aria-labelledby="cabinet" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="cabinet">Cabinet Members</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
+  <!-- Hidden: cabinet member list modal -->
+  <div class="modal fade" id="cabinet" tabindex="-1" aria-labelledby="cabinet" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="cabinet">Cabinet Members</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+          clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+          consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+          takimata sanctus est Lorem ipsum dolor sit amet.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
+  </div>
 </body>
+
 </html>
