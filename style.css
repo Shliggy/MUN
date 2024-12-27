@@ -1,0 +1,29 @@
+/* Default style for all buttons */
+.nav-link {
+    font-weight: normal;
+    color: black;
+  }
+
+  /* Style for the active button */
+  .nav-link.active {
+    font-weight: bold;
+    color:black
+  }
+
+  /* Remove default hover effect and customize */
+  .nav-link:hover {
+    background-color: inherit; /* Keeps the original color */
+    filter: brightness(90%); /* Slight darkening for hover feedback */
+    color: black /*no font color change when hoverin*/
+  }
+
+  /* Active button */
+  .nav-link.active:hover {
+    filter: brightness(100%); /* No hover effect on active buttons */
+  }
+
+  /* Remove blue focus state */
+  .nav-link:focus {
+    outline: none;
+    background-color: inherit;
+  }
