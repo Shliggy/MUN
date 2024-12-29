@@ -5,15 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-    crossorigin="anonymous"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 
   <title>Crisis Capybara</title>
@@ -105,67 +98,66 @@
 
   <div class="container-fluid mt-2">
     <div class="row">
-      <div class="col-2"> 
-        <div class="btn-group">
-          <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Ressources
-          </button>
-          <div class="dropdown-menu p-3" style="width: 300px;">
-            <!-- Section 1 -->
-            
-            <div>
-              <h6 class="dropdown-header">Money</h6>
-              <p>1.000.000.000 $ </p>
-              
+      <div class="col-10">
+        <nav class="d-flex justify-content-between">
+          <div class="nav nav-tabs justify-content-end border-0" id="nav-tab" role="tablist">
+            <button type="button" class="nav-link dropdown-toggle rounded-0 rounded-top" data-bs-toggle="dropdown" data-bs-auto-close="outside" 
+            aria-expanded="false" style="background-color: #bb2d3b; color: white;">
+              Ressources
+            </button>
+            <div class="dropdown-menu p-3" style="width: 300px;">
+              <!-- Section: Money -->
+              <div>
+                <h6 class="dropdown-header">Money</h6>
+                <p>1.000.000.000 $ </p>
+              </div>
+              <hr class="dropdown-divider">
+              <!-- Section: Other resources -->
+              <div>
+                <h6 class="dropdown-header">Resources</h6>
+                <p> 10 Leopard 2A8 Main Battle Tanks, 50.000 child soldiers, 24 STRELA Man-portable air defense systems.
+                </p> 
+              </div>
             </div>
-           
-            <hr class="dropdown-divider">
-            <!-- Section 2 -->
-            <div>
-              <h6 class="dropdown-header">Resources</h6>
-              <p> 10 Leopard 2A8 Main Battle Tanks, 50.000 child soldiers, 24 STRELA Man-portable air defense systems.</p>
-            </div>
-            <hr class="dropdown-divider">
-            
-          </div>
         </div>
-        
-      </div>
-      <div class="col-8">
-        
-        <nav>
-          <div class="nav nav-tabs justify-content-end border-0" id="nav-tab" role="tablist"> <button
-              class="nav-link active me-2 border-0" style="background-color: yellow;" id="nav-Chair-Notes-tab"
-              data-bs-toggle="tab" data-bs-target="#nav-Chair-Notes" type="button" role="tab"
-              aria-controls="nav-Chair-Notes" aria-selected="true">Chair Notes</button> <button class="nav-link me-2 border-0"
-              style="background-color: aqua;" id="nav-Messages-tab" data-bs-toggle="tab" data-bs-target="#nav-Messages"
-              type="button" role="tab" aria-controls="nav-Messages" aria-selected="false">Messages</button> <button
-              class="nav-link border-0" style="background-color: lime;" id="nav-Directives-tab" data-bs-toggle="tab"
+          <div class="nav nav-tabs justify-content-end border-0" id="nav-tab" role="tablist">
+            <button class="nav-link me-2 border-0" id="nav-Chair-Notes-tab" data-bs-toggle="tab"
+              data-bs-target="#nav-Chair-Notes" type="button" role="tab" aria-controls="nav-Chair-Notes"
+              aria-selected="false">
+              Chair Notes</button>
+            <button class="nav-link me-2 border-0" id="nav-Messages-tab" data-bs-toggle="tab"
+              data-bs-target="#nav-Messages" type="button" role="tab" aria-controls="nav-Messages"
+              aria-selected="false">
+              Messages</button>
+            <button class="nav-link active border-0" id="nav-Directives-tab" data-bs-toggle="tab"
               data-bs-target="#nav-Directives" type="button" role="tab" aria-controls="nav-Directives"
-              aria-selected="false">Directives</button> </div>
+              aria-selected="true">
+              Directives</button>
+          </div>
         </nav>
       </div>
       <div class="col-2">
         <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
           <li class="nav-item" role="presentation"> <button class="nav-link active" id="pills-home-tab"
               data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-              aria-selected="true">News</button> </li>
+              aria-selected="true"> Newsletter</button> </li>
           <li class="nav-item" role="presentation"> <button class="nav-link" id="pills-notifications-tab"
               data-bs-toggle="pill" data-bs-target="#pills-notifications" type="button" role="tab"
-              aria-controls="pills-notifications" aria-selected="false">Notifis</button> </li>
+              aria-controls="pills-notifications" aria-selected="false">Notifications</button> </li>
         </ul>
       </div>
-    </div> <!-- Combined tab content -->
+    </div>
     <div class="row border-0">
-      <div class="col-10" style="flex-grow: 1">
-        <div class="tab-content" id="nav-tabContent">
-          <div class="tab-pane fade show active" id="nav-Chair-Notes" role="tabpanel"
-            aria-labelledby="nav-Chair-Notes-tab" tabindex="0" style="background-color: yellow;"> Lorem Ipsum Chair
+      <div class="col-10">
+        <div class="tab-content px-4 py-2 rounded-bottom" id="nav-tabContent"
+          style="background-color: #ffcc40;">
+          <div class="tab-pane" id="nav-Chair-Notes" role="tabpanel"
+            aria-labelledby="nav-Chair-Notes-tab" tabindex="0"> Lorem Ipsum Chair
             Notes </div>
-          <div class="tab-pane fade" id="nav-Messages" role="tabpanel" aria-labelledby="nav-Messages-tab" tabindex="0"
-            style="background-color: aqua;"> Lorem Ipsum Messages </div>
-          <div class="tab-pane fade" id="nav-Directives" role="tabpanel" aria-labelledby="nav-Directives-tab"
-            tabindex="0" style="background-color: lime;"> Lorem Ipsum Directives </div>
+          <div class="tab-pane" id="nav-Messages" role="tabpanel" aria-labelledby="nav-Messages-tab" tabindex="0">
+            Lorem Ipsum Messages </div>
+          <div class="tab-pane active show" id="nav-Directives" role="tabpanel" aria-labelledby="nav-Directives-tab"
+            tabindex="0"> Lorem Ipsum Directives </div>
         </div>
       </div>
       <div class="col-2">
@@ -298,6 +290,9 @@
       </div>
     </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

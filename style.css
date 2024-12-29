@@ -6,8 +6,8 @@
 /* Style for the active button */
 .nav-link.active {
   filter: brightness(100%);
-  text-decoration: underline;
   color: black !important;
+  background-color: #ffcc40 !important;
 }
 
 /* Remove default hover effect and customize */
